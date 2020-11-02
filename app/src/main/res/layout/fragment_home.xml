@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.HomeFragment">
+
+    <com.youth.banner.Banner
+        android:id="@+id/home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150" />
+
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/home_fm_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

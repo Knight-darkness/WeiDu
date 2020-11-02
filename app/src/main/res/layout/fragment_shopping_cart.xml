@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_10"
+    android:orientation="vertical"
+    tools:context=".view.fragment.ShoppingCartFragment">
+
+    <TextView
+        android:id="@+id/iv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/shoppingCartAll"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_shopping_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/darker_gray">
+        <!-- 全选 -->
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:button="@drawable/rg_check_change6" />
+        <!-- 合计 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/tv_allprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="合计："
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:id="@+id/tv_allnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="总计：0件商品" />
+        </LinearLayout>
+        <!-- 去结算按钮 -->
+        <Button
+            android:id="@+id/closeAccounts"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:text="去结算"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

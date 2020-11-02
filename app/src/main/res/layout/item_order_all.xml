@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/buttonitem"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_3">
+
+            <TextView
+                android:id="@+id/item_order_name_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="订单号:"
+                android:textSize="@dimen/dp_15" />
+
+            <TextView
+                android:id="@+id/item_order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="2020年10月23日16:36:33"
+                android:textSize="@dimen/dp_10" />
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/item_order_goodnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="right"
+            android:text="共好几种商品,已付款xxx" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/item_order_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_7"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="删除订单" />
+
+            <Button
+                android:id="@+id/item_order_visib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dp_7"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="完成程度" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

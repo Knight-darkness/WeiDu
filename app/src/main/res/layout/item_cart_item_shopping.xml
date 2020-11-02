@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/dp_10"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- 复选 -->
+    <CheckBox
+        android:id="@+id/shopping_cart_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <!-- 商品图片 -->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/shopping_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="@dimen/dp_10"
+        app:roundedCornerRadius="@dimen/dp_9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 商品名称 -->
+        <TextView
+            android:id="@+id/shopping_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1"
+            android:text="牛奶好喝" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <!-- 价格 -->
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥150"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- 加减器 -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.wd.weidu.net.AddSubView
+                android:id="@+id/addsubview_asv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
