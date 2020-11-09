@@ -24,8 +24,7 @@ import io.realm.Realm;
  * @Version: 1.0
  */
 public class MyApplication extends Application {
-
-
+//OK
     @Override
     public void onCreate() {
         super.onCreate();
