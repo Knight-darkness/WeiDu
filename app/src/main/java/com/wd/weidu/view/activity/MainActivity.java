@@ -83,7 +83,6 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainCo
         main_background = (LinearLayout) findViewById(R.id.main_background);
         main_skip = (TextView) findViewById(R.id.main_skip);
 
-        new UpdateManager(this,"http://192.168.138.2:8080/version.json").checkUpdate();
 
         Message message = mHandler.obtainMessage();
         message.what = 0;

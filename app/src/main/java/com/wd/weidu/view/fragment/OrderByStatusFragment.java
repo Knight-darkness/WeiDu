@@ -126,47 +126,6 @@ public class OrderByStatusFragment extends BaseFragment<MainPresenter> implement
 
 
         presenter.getOrderListBy(0);
-        /*presenter.getOrderListBy(9);*/
-        /*ArrayList<Fragment> mlist = new ArrayList<>();
-        mlist.add(new AllOrderFragment());//全部
-        mlist.add(new AllOrderFragment());//付款
-        mlist.add(new AllOrderFragment());//收货
-        mlist.add(new AllOrderFragment());//评价
-        mlist.add(new AllOrderFragment());//完成
-
-        ArrayList<String> titleList = new ArrayList<>();
-        titleList.add("全部订单");
-        titleList.add("代付款");
-        titleList.add("待收货");
-        titleList.add("待评价");
-        titleList.add("已完成");
-
-        orderFmStatusViewpager.setAdapter(new FragmentPagerAdapter(getChildFragmentManager()) {
-            @NonNull
-            @Override
-            public Fragment getItem(int position) {
-                return mlist.get(position);
-            }
-
-            @Override
-            public int getCount() {
-                return mlist.size();
-            }
-
-            @Nullable
-            @Override
-            public CharSequence getPageTitle(int position) {
-                return titleList.get(position);
-            }
-        });
-
-        orderFmStatusTablayout.setupWithViewPager(orderFmStatusViewpager);
-
-        orderFmStatusTablayout.getTabAt(0).setIcon(R.drawable.order_all);
-        orderFmStatusTablayout.getTabAt(1).setIcon(R.drawable.order_pay);
-        orderFmStatusTablayout.getTabAt(2).setIcon(R.drawable.order_receive);
-        orderFmStatusTablayout.getTabAt(3).setIcon(R.drawable.order_comment);
-        orderFmStatusTablayout.getTabAt(4).setIcon(R.drawable.shop_car_all);*/
 
     }
 
